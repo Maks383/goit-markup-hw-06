@@ -56,7 +56,7 @@ body {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
-  transition-property: fill, color;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -564,7 +564,11 @@ margin-bottom: 20px;
 .foter {
   display: flex;
   align-items: baseline;
-  gap: 70px;
+}
+
+.foter-item {
+  margin-left: 70px;
+  margin-right: 93px;
 }
 
 .footer-soc-link {
@@ -788,6 +792,12 @@ img {
   pointer-events: none;
 }
 
+.svg {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 
 
 .modal-button {
@@ -805,7 +815,13 @@ img {
   align-items: center;
   justify-content: center;
   padding: 0;
+  transition-property: fill;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button:hover .svg {
+  fill: #2196F3;
 }
 
 .backdrop {
@@ -827,7 +843,7 @@ border-radius: 4px;
   letter-spacing: 0.03em;
   color: #212121;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 }
 
 .modal-input {
@@ -837,6 +853,9 @@ border-radius: 4px;
   border-radius: 4px;
   padding-left: 42px;
   outline: transparent;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus,
@@ -858,6 +877,9 @@ border-radius: 4px;
   top: 50%;
   transform: translateY(-50%);
   left: 12px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-field {
@@ -873,6 +895,9 @@ border-radius: 4px;
   resize: none;
   padding-top: 12px;
   padding-left: 16px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input-bottom:focus,
@@ -952,6 +977,8 @@ gap: 10px;
 .checkbox {
   display: flex;
   margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .checkbox-title {
@@ -988,6 +1015,9 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 margin-left: 114px;
 border: none;
+transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:hover,
@@ -998,4 +1028,7 @@ border: none;
 .checkbox-text {
   background-color: #2196F3;
   border-radius: 2px;
+  width: 16px;
+  height: 15px;
+  outline: none;
 }
